@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Semantic Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 10px;
+        }
+        section, article, aside {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>My Website</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- SECTION -->
+    <section>
+        <h2>Section Example</h2>
+
+        <!-- ARTICLE -->
+        <article>
+            <h3>Article Title</h3>
+            <p>This is an article inside a section.</p>
+
+            <!-- ABBR -->
+            <p><abbr title="HyperText Markup Language">HTML</abbr> is used for web pages.</p>
+
+            <!-- CITE -->
+            <p>Reference: <cite>Learning Web Design Book</cite></p>
+
+            <!-- CODE + PRE -->
+            <pre><code>let x = 10;
+console.log(x);</code></pre>
+
+            <!-- PROGRESS -->
+            <label>Progress:</label>
+            <progress value="70" max="100"></progress>
+
+            <!-- METER -->
+            <label>Meter:</label>
+            <meter value="0.6">60%</meter>
+
+            <!-- OUTPUT -->
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="a" value="10">
+                +
+                <input type="number" id="b" value="20">
+                =
+                <output name="result">30</output>
+            </form>
+
+        </article>
+
+        <!-- ASIDE -->
+        <aside>
+            This is side content (ads / tips).
+        </aside>
+
+    </section>
+
+    <!-- DETAILS + SUMMARY -->
+    <details>
+        <summary>Click to see hidden info</summary>
+        <p>This content was hidden before clicking.</p>
+    </details>
+
+    <!-- ADDRESS -->
+    <address>
+        Contact: vanshika , India
+    </address>
+
+    <!-- FIGURE + FIGCAPTION -->
+    <figure>
+        <img src="https://via.placeholder.com/150" alt="sample image">
+        <figcaption>Sample Image Caption</figcaption>
+    </figure>
+
+    <!-- DIALOG -->
+    <dialog open>
+        This is a popup dialog box
+    </dialog>
+
+    <!-- TEMPLATE -->
+    <template id="myTemplate">
+        <p>This is hidden template content</p>
+    </template>
+
+    <!-- CANVAS -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 My Website</p>
+</footer>
+
+<script>
+    // Canvas drawing
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
+    ctx.fillStyle = "blue";
+    ctx.fillRect(20, 20, 150, 50);
+
+    // Template usage
+    let temp = document.getElementById("myTemplate");
+    document.body.appendChild(temp.content.cloneNode(true));
+</script>
+
+</body>
+</html>
