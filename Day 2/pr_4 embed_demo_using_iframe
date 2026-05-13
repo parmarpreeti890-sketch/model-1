@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Oak University Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        iframe {
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            /* Ensures aspect ratio is maintained */
+            aspect-ratio: 16 / 9; 
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #1a73e8;
+            margin-top: 0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Silver Oak University Details</h1>
+
+    <!-- University Video Section -->
+    <div class="container">
+        <h2>University Video</h2>
+        <!-- Using a verified active video ID (v98M0UNhHjs) -->
+        <iframe 
+            src="https://www.youtube.com/embed/v98M0UNhHjs" 
+            title="Silver Oak University Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- University Location Section -->
+    <div class="container">
+        <h2>Our Location</h2>
+        <!-- Verified Google Maps Embed for Silver Oak University -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.512646604443!2d72.5244583!3d23.0415306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c0429a3233%3A0x6b44a8616140e70b!2sSilver%20Oak%20University!5e0!3m2!1sen!2sin!4v1715516000000!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</body>
+</html>
