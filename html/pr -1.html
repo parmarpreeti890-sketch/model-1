@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #212529;
+        }
+        
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+        
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .category-card {
+            transition: 0.3s;
+            border: none;
+            border-radius: 15px;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .category-img {
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Categories</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Explore Categories</h1>
+            <p class="lead">Bootstrap Grid System Website Example</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container my-5">
+
+        <div class="row g-4">
+
+            <!-- Category 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="card-img-top category-img" alt="Technology">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Technology</h4>
+                        <p class="card-text">
+                            Learn programming, AI, web development, and modern tech.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="card-img-top category-img" alt="Coding">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Coding</h4>
+                        <p class="card-text">
+                            Explore HTML, CSS, JavaScript, Python, React and more.
+                        </p>
+
+                        <a href="#" class="btn btn-success">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="card-img-top category-img" alt="Travel">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Travel</h4>
+                        <p class="card-text">
+                            Discover beautiful destinations and travel experiences.
+                        </p>
+
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="card-img-top category-img" alt="Food">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Food</h4>
+                        <p class="card-text">
+                            Explore recipes, restaurants, and healthy food ideas.
+                        </p>
+
+                        <a href="#" class="btn btn-warning">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" class="card-img-top category-img" alt="Fitness">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Fitness</h4>
+                        <p class="card-text">
+                            Workout plans, gym tips, and fitness motivation.
+                        </p>
+
+                        <a href="#" class="btn btn-dark">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" class="card-img-top category-img" alt="Education">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Education</h4>
+                        <p class="card-text">
+                            Online learning resources and educational materials.
+                        </p>
+
+                        <a href="#" class="btn btn-info">View More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Category Website | Bootstrap Grid System Example</p>
+    </footer>
+
+</body>
+
+</html>
