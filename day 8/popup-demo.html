@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Popup Boxes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #369adce7, #4e6aa7);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 350px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+        
+        button {
+            width: 220px;
+            padding: 12px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+        
+        .alert-btn {
+            background: #007bffcb;
+        }
+        
+        .confirm-btn {
+            background: #337041ce;
+        }
+        
+        .prompt-btn {
+            background: #79551f;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>JavaScript Popup Boxes</h1>
+
+        <button class="alert-btn" onclick="showAlert()">
+            Alert Box
+        </button>
+
+        <button class="confirm-btn" onclick="showConfirm()">
+            Confirm Box
+        </button>
+
+        <button class="prompt-btn" onclick="showPrompt()">
+            Prompt Box
+        </button>
+
+        <p id="output"></p>
+
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Welcome to JavaScript!");
+        }
+
+        function showConfirm() {
+            let result = confirm("Do you want to continue?");
+
+            if (result == true) {
+                document.getElementById("output").innerHTML =
+                    "You clicked OK!";
+            } else {
+                document.getElementById("output").innerHTML =
+                    "You clicked Cancel!";
+            }
+        }
+
+        function showPrompt() {
+            let name = prompt("Enter your name:");
+
+            if (name != null && name != "") {
+                document.getElementById("output").innerHTML =
+                    "Hello " + name + "!";
+            } else {
+                document.getElementById("output").innerHTML =
+                    "No name entered!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
